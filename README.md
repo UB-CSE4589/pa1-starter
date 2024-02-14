@@ -1,6 +1,13 @@
 # CSE4/589: Modern Network Concepts - Programming Assignment 1
 
-Welcome to Programming Assignment 1 for CSE4/589: Modern Network Concepts. This assignment is designed to introduce you to the basics of network programming. Please follow the instructions below to set up your environment and begin the assignment.
+Welcome to Programming Assignment 1 for CSE4/589: Modern Network Concepts, focused on developing a text chat application. This assignment involves building both client and server components to enable text communication over TCP connections. Follow the guidelines below to start your project.
+
+## Objectives
+
+The main goal is to develop a text chat application comprising one chat server and multiple chat clients, facilitating communication over TCP connections. The project is divided into two stages:
+
+- **Stage 1:** Implement basic login functionality for the client and server applications.
+- **Stage 2:** Implement advanced features based on Stage 1, enhancing the application's capabilities.
 
 ## Getting Started
 
@@ -77,7 +84,6 @@ For any doubts or clarifications, please refer to the [Piazza forum](https://pia
 
 ## Submission Guidelines
 
-- Follow the directory structure as mentioned above.
 - Use the `assignment1_package.sh` script to package your submission.
 - Ensure your code compiles and runs as expected in the provided environment.
 - Submit your assignment through the designated submission portal before the deadline.
