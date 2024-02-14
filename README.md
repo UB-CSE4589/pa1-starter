@@ -15,12 +15,16 @@ You have the option to complete this assignment in either C or C++. To select yo
 
 For C:
 ```
-git merge c -m "lang option: c" --no-ff && git push origin main
+cd <path_to_your_local_repo>
+git fetch --all
+git merge origin/c -m "lang option: c" --no-ff --allow-unrelated-histories && git push origin main
 ```
 
 For C++:
 ```
-git merge cpp -m "lang option: cpp" --no-ff && git push origin main
+cd <path_to_your_local_repo>
+git fetch --all
+git merge origin/cpp -m "lang option: cpp" --no-ff --allow-unrelated-histories && git push origin main
 ```
 
 ## Directory Structure
