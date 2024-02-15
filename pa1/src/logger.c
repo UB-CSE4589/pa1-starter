@@ -19,6 +19,8 @@
  *
  * Contains logging functions to be used by CSE489/589 students.
  */
+#define _POSIX_C_SOURCE 200809L
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -41,23 +43,23 @@ void cse4589_init_log(char* port)
 	}
 
 	char* hostname = (char*) malloc(HOSTNAME_LEN*sizeof(char));
-	bzero(hostname, HOSTNAME_LEN);
+	memset(hostname, 0, HOSTNAME_LEN); 
 	fscanf(fp, "%s[^\n]", hostname);
 
 	/* Get executable's path*/
 	char* exec_path = (char*) malloc(PATH_LEN*sizeof(char));
-	bzero(exec_path, PATH_LEN);
+	memset(exec_path, 0, PATH_LEN);
   	if (readlink("/proc/self/exe", exec_path, PATH_LEN) == -1) {
     	printf("Oops! Failed to get executable path. Contact the course staff!\n" );
 		exit(1);
 	}
 
 	char* exec_dir = (char*) malloc(PATH_LEN*sizeof(char));
-	bzero(exec_dir, PATH_LEN);
+	memset(exec_dir, 0, PATH_LEN);
 	memcpy(exec_dir, exec_path, strlen(exec_path)-12);
 	free(exec_path);
 
-	bzero(LOGFILE, FILEPATH_LEN);
+	memset(LOGFILE, 0, FILEPATH_LEN);
 	sprintf(LOGFILE, "%s/logs/assignment_log_%s_%s", exec_dir, hostname, port);
 
 	/*Clean up*/
