@@ -75,10 +75,10 @@ After merging the chosen branch, your directory should follow the structure outl
 
 To assist you with the assignment, please refer to the following resources:
 
-- **Assignment Handout:** [Link to Assignment Handout]
-- **Assignment Template:** [Link to Assignment Template]
-- **Assignment Part 1 Report Template:** [Link to Part 1 Report Template]
-- **Assignment Part 2 Report Template:** [Link to Part 2 Report Template]
+- **Assignment Handout:** [Link](https://docs.google.com/document/d/1Rj8_4HptITwR_FSN5G7yZd5mAlPn3wE7a28rKO6-Tek/edit?usp=sharing)
+- **Assignment Template:** [Link](https://docs.google.com/document/d/1BUQURql0L7tstcrxRHGxZZOeHDCoFzVP6qrwCIzKvYI/edit?usp=sharing)
+- **Assignment Stage 1 Report Template:** [Link](https://docs.google.com/document/d/1OZM7bTrvf9rxhm70bXvOPJh-bHMfbhok-oL5-xusptk/edit?usp=sharing)
+- **Assignment Stage 2 Report Template:** [Link](https://docs.google.com/document/d/1qQPwxtFmAIhI2ps5Omg7X7SB97hVLdVTkSq1Wo4jdjc/edit?usp=sharing)
 
 Please ensure you read through the handout thoroughly before starting the assignment to understand the requirements and deliverables.
 
