@@ -39,7 +39,7 @@ function ask {
 }
 
 echo
-echo -n "Enter your UBIT username (without the @buffalo.edu part) and press [ENTER]: "
+echo -n "Enter your Github Classroom Team Name and press [ENTER]: "
 read ubitname
 
 if [ -d "./pa1" ]; 
