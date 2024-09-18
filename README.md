@@ -4,16 +4,14 @@ Welcome to Programming Assignment 1 for CSE4/589: Modern Network Concepts, focus
 
 ## Objectives
 
-The main goal is to develop a text chat application comprising one chat server and multiple chat clients, facilitating communication over TCP connections. The project is divided into two stages:
-
-- **Stage 1:** Implement basic login functionality for the client and server applications.
-- **Stage 2:** Implement advanced features based on Stage 1, enhancing the application's capabilities.
+The main goal is to develop a text chat application comprising one chat server and multiple chat clients, facilitating communication over TCP connections. The project has to be done in one stage.
 
 ## Getting Started
 
-You have the option to complete this assignment in either C or C++. To select your language of choice, execute the following command in your terminal. This will merge the chosen language branch into the main branch of your repository.
+You have the option to complete this assignment in either C, C++ or Python. To select your language of choice, execute the following command in your terminal. This will merge the chosen language branch into the main branch of your repository.
 
 For C:
+
 ```
 cd <path_to_your_local_repo>
 git fetch --all
@@ -21,10 +19,19 @@ git merge origin/c -m "lang option: c" --no-ff && git push origin main
 ```
 
 For C++:
+
 ```
 cd <path_to_your_local_repo>
 git fetch --all
 git merge origin/cpp -m "lang option: cpp" --no-ff && git push origin main
+```
+
+For Python:
+
+```
+cd <path_to_your_local_repo>
+git fetch --all
+git merge origin/python -m "lang option: python" --no-ff && git push origin main
 ```
 
 ## Directory Structure
@@ -32,6 +39,7 @@ git merge origin/cpp -m "lang option: cpp" --no-ff && git push origin main
 After merging the chosen branch, your directory should follow the structure outlined below:
 
 ### For C:
+
 ```
 .
 ├── README.md
@@ -52,6 +60,7 @@ After merging the chosen branch, your directory should follow the structure outl
 ```
 
 ### For C++:
+
 ```
 .
 ├── README.md
@@ -71,24 +80,38 @@ After merging the chosen branch, your directory should follow the structure outl
         └── logger.cpp
 ```
 
+### For Python:
+
+```
+.
+├── README.md
+├── assignment1_package_py.sh
+├── grader
+│   ├── grader.cfg
+│   └── grader_controller
+└── pa1
+    └── src
+        ├── assignment1.py
+        └── logger.py
+```
+
 ## Resources
 
 To assist you with the assignment, please refer to the following resources:
 
-- **Assignment Handout:** [Link](https://docs.google.com/document/d/1Rj8_4HptITwR_FSN5G7yZd5mAlPn3wE7a28rKO6-Tek/edit?usp=sharing)
-- **Assignment Template:** [Link](https://docs.google.com/document/d/1BUQURql0L7tstcrxRHGxZZOeHDCoFzVP6qrwCIzKvYI/edit?usp=sharing)
-- **Assignment Stage 1 Report Template:** [Link](https://docs.google.com/document/d/1OZM7bTrvf9rxhm70bXvOPJh-bHMfbhok-oL5-xusptk/edit?usp=sharing)
-- **Assignment Stage 2 Report Template:** [Link](https://docs.google.com/document/d/1qQPwxtFmAIhI2ps5Omg7X7SB97hVLdVTkSq1Wo4jdjc/edit?usp=sharing)
+- **Assignment Handout:** [Link](https://docs.google.com/document/d/184DnVFBqZ1siLA_H5KsFBbI3oOa0Trhv0JPWN97Wjm0/edit?usp=sharing)
+- **Assignment Template:** [Link](https://docs.google.com/document/d/1GibGutfnvbqd0Lvt9HXhZ6sHC3oWjnwjVIIfkD6iy7o/edit?usp=sharing)
+- **Assignment Report Template:** [Link](https://docs.google.com/document/d/16XV-6gFnkXeXoumIAj4kjlw10dBsxqKe-A-3N9v0MFY/edit?usp=sharing)
 
 Please ensure you read through the handout thoroughly before starting the assignment to understand the requirements and deliverables.
 
 ## Support
 
-For any doubts or clarifications, please refer to the [Piazza forum](https://piazza.com/class/lr5z5f8jkcz3hb) for our course. Make sure to follow the forum for updates and discussions related to the assignment.
+For any doubts or clarifications, please refer to the [Piazza forum](https://piazza.com/class/m05fx9f67l5390) for our course. Make sure to follow the forum for updates and discussions related to the assignment.
 
 ## Submission Guidelines
 
-- Use the `assignment1_package.sh` script to package your submission.
+- Use the `assignment1_package_py.sh` script to package your submission.
 - Ensure your code compiles and runs as expected in the provided environment.
 - Submit your assignment through the designated submission portal before the deadline.
 
