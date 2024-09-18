@@ -42,30 +42,38 @@ echo
 echo -n "Enter your Github Classroom Team Name and press [ENTER]: "
 read ubitname
 
-if [ -d "./src" ]; 
+if [ -d "./pa1" ]; 
 then
-    echo "Directory with given src exists"
+    echo "Directory with given pa1 exists"
 else
-    echo "No directory named src found. Try again!"
+    echo "No directory named pa1 found. Try again!"
     exit 0
 fi
 
 echo "Verifying contents ..."
 
+
 echo
-echo "Main Python script: "
-FILE=`find ./src/ -name "assignment1.py"`
+echo "Python file with main function: "
+FILE=`find ./pa1/src/ -name "assignment1.py"`
 if [ -n "$FILE" ];
 then
     echo "File $FILE exists"
+    if grep -q "if __name__[ ]*==[ ]*['\"]__main__['\"]" $FILE
+    then
+        echo "File $FILE contains the main function definition"
+    else
+        echo "File $FILE does NOT contain the main function definition"
+        exit 0
+    fi
 else
-    echo "Missing main Python file named assignment1.py!"
+    echo "Missing main Python file or file named incorrectly!"
     exit 0
 fi
 
 echo
 echo "Packaging ..."
-cd src/ && tar --exclude='./logs' --exclude='./__pycache__' -zcvf ../${ubitname}_pa1.tar * && cd ..
+cd pa1/ && tar --exclude='./src/logs' --exclude='./src/__pycache__' -zcvf ../${ubitname}_pa1.tar * && cd ..
 echo "Done!"
 echo
 echo "!!!IMPORTANT: Your submission is NOT done!!!"
