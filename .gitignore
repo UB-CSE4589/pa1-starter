@@ -33,3 +33,7 @@
 
 # Build File
 pa1/assignment1
+
+# Python and log files
+/src/__pycache__/*
+/src/logs/*
